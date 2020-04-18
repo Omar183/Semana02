@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Formulario</title>
+    
+</head>
+
+<body>
+    <h1>Formulario</h1>
+    <form action="#" method="GET">
+        <fieldset>
+            <legend>
+                <div>
+                    <label for="firstName">Nombre</label>
+                    <input
+                    type="text"
+                    id="firstName"
+                    name="firstName"
+                    placeholder="Ingrese nombre"
+                    required
+                    >
+                    <p>*Nombre(s) requeridos</p>
+                </div>
+                    <label for="lastName">Apellidos</label>
+                    <input
+                    type="text"
+                    id="lasttName"
+                    name="lastName"
+                    placeholder="Ingrese apellido"
+                    required
+                    >
+                    <p>*Apellidos requeridos</p>
+                <div>
+                    <label for="age">Edad</label>
+                    <input
+                    type="number"
+                    id="age"
+                    min="18"
+                    max="80"
+                    name="age"
+                    pattern="[18-80]{2}"
+                    placeholder="Ingrese edad"
+                    required
+                    >
+                    <p>*Edad requerido</p>
+                </div>
+                <div><br>
+                    <label>
+                        Sexo
+                    <label><br>
+                            Femenino
+                            <input type="radio" name="sex" required>
+                        </label>
+                    <label>
+                        Masculino
+                        <input type="radio" name="sex" required>
+                    </label>
+                    <p>*Sexo requerido</p>
+                </div>
+                <div>
+                    <label for="id">DNI</label>
+                    <input
+                    type="text"
+                    id="id"
+                    name="age"
+                    pattern="[A-Za-z0-9]+"
+                    minlength="8"
+                    placeholder="Ingrese número de DNI"
+                    required
+                    >
+                    <p>*DNI requerido</p>
+                </div>
+                <div>
+                    <label for="email">Correo</label>
+                    <input type="email" id="email" name="email"
+                    placeholder="Ingrese su email"
+                    required>
+                    <p>*Email requerido</p>                   
+                </div>
+                </legend>
+
+        </fieldset>
+        <fieldset>
+            <button
+                type="submit">Enviar
+            </button>
+        </fieldset>
+    </form>
+<style>
+    div{
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid gray;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    input:required 
+    {
+        border:3px solid red;
+    }
+    input:valid{
+        border:3px solid green;
+    }
+
+    button{
+        padding: 10px;
+        background-color: blue;
+        text-transform: uppercase;
+        color: wheat;
+        border: 0 none;
+        cursor:pointer;
+    }
+
+</style>
+</body>
+
+</html>
