@@ -94,3 +94,13 @@ body{
 footer{
     text-align: center;
   }
+  #boton01{
+    display: block;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    width: 200px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+}
